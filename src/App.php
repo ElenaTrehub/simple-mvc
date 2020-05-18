@@ -1,7 +1,7 @@
 <?php
 
 namespace Horoshop\Test;
-
+use Horoshop\Test\src\Utils\MySQL;
 /**
  * Class App
  */
@@ -19,13 +19,23 @@ class App
     {
         if (self::$instance === null) {
             return self::$instance = new static();
+
         }
 
         return self::$instance;
     }
 
+    public function start(){
+        MySQL::$pdo = new \PDO(
+            "mysql:dbname=templates_db;host=localhost;charset=utf8",
+            "root",
+            ""
+        );
+        $this->route();
+    }
     public function route()
     {
+
         $segments = explode('/', $this->getURI());
 
         //controller definition

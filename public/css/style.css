@@ -1,0 +1,238 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #fff;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+}
+.strap{
+
+     flex: 0 40px;
+     background-color: #627B7A;
+ }
+.strap img{
+
+    margin: 8px 0 0 7px;
+}
+.container{
+    flex: 1 auto;
+
+}
+.content{
+    background-color: #2C3D39;
+    width: 100%;
+    padding: 20px 32px 20px 12px;
+    min-height: 100vh;
+}
+.content-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.content-header__title{
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.content-header__btn{
+     text-align: center;
+     font-size: 14px;
+     background-color: #418AF2;
+     cursor: pointer;
+     padding: 7px 11px;
+     border-radius: 3px;
+     border: 1px solid rgba(0, 0, 0, 0.2);
+     box-sizing: border-box;
+ }
+.content-header__btn a{
+    color: #fff;
+    text-decoration: none;
+}
+.content-notfound{
+    margin-top: 20px;
+    font-size: 16px;
+}
+.add-content{
+    background-color: #fff;
+    width: 100%;
+    padding: 24px  32px 20px 17px;
+    min-height: 100vh;
+}
+.add-content__top{
+    display: flex;
+    justify-content: space-between;
+}
+.add-content__inputs{
+    display: flex;
+    justify-content: flex-start;
+}
+.inputs-back{
+    margin-right: 37px;
+}
+.inputs-number{
+    position: relative;
+    padding-left: 25px;
+    margin-right: 8px;
+}
+.inputs-number:before{
+    content: "№";
+    position: absolute;
+    color: #222222;
+    left: 0;
+    top: 7px;
+    font-size: 14px;
+}
+.inputs-number input{
+    width: 80px;
+}
+input{
+    padding: 7px 11px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 14px;
+}
+input[type="text"]::placeholder{
+    color: rgba(0, 0, 0, 0.2);
+}
+.inputs-title input{
+    width: 512px;
+}
+.add-content__btns{
+    display: flex;
+    justify-content: flex-end;
+}
+.btns-remove{
+    text-align: center;
+    font-size: 14px;
+    color: #E61610;
+    cursor: pointer;
+    padding: 7px 11px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+.template-add{
+    display: flex;
+    justify-content: flex-start;
+    margin: 27px 0 27px 78px;
+    align-items: flex-start;
+
+}
+.template-add__btn{
+    background: #FFFFFF;
+    width: 120px;
+    height: 120px;
+    border: 2px dashed rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #C4C4C4;
+    font-size: 60px;
+    text-align: center;
+    line-height: 105px;
+    cursor: pointer;
+}
+.template-add input{
+    display: none;
+}
+.add-content_link{
+     position: relative;
+     padding-left: 28px;
+     margin-left: 51px;
+ }
+.add-content_link input{
+    width: 600px;
+}
+.add-content_link:before{
+    content: "";
+    position: absolute;
+    background-image: url('../images/link.png');
+    position: absolute;
+    color: #222222;
+    left: 0;
+    top: 7px;
+    width: 15px;
+    height: 15px;
+}
+.box-image{
+    margin-left: 51px;
+}
+.templates-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.templates-wrapper form{
+    min-width: 300px;
+    height: 430px;
+    flex-grow: 1;
+    margin-left: 20px;
+    margin-bottom: 40px;
+
+}
+.template-box{
+
+}
+.template-box__image{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.template-box__info{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 16px;
+}
+.info-number{
+    width: 33px;
+    height: 16px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 11px;
+    color: #000000;
+    margin-right: 8px;
+}
+.info-name{
+    font-size: 16px;
+}
+.show{
+    margin-right: 8px;
+    position: relative;
+
+}
+#image{
+    width: 120px;
+    height: auto;
+}
+#del{
+    position: absolute;
+    z-index: 100;
+    width: 24px;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 8px;
+    right: 4px;
+    padding: 7px 7px 5px 7px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+}
